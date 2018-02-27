@@ -1,0 +1,8 @@
+-cpu=rx600
+-lang=c99
+-include="E:\Works\RX600\ºê´ï³É²à¿××ê\V0.2\MugongBianjiaoCtrl"
+-output=obj="F:\work\hew\HongWeiDe\DuoTou_HWD_V0.5\MugongBianjiaoCtrl\Debug\ServoDrv.obj"
+-debug
+-optimize=1
+"F:\work\hew\HongWeiDe\DuoTou_HWD_V0.5\MugongBianjiaoCtrl\ServoDrv.c"
+-nologo

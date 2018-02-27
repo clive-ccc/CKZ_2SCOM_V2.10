@@ -1,0 +1,8 @@
+-cpu=rx600
+-lang=c99
+-include="E:\shuntouControl\shuntouControl"
+-output=obj="E:\MugongBianjiaoCtrl\MugongBianjiaoCtrl\Debug\vector_table.obj"
+-debug
+-optimize=1
+"E:\MugongBianjiaoCtrl\MugongBianjiaoCtrl\vector_table.c"
+-nologo

@@ -1,0 +1,7 @@
+-cpu=rx600
+-lang=c99
+-include="E:\FourAxisControl\FourAxisControl"
+-output=obj="E:\shuntouControl\shuntouControl\Debug\AutoBitDataProc.obj"
+-debug
+"E:\shuntouControl\shuntouControl\AutoBitDataProc.c"
+-nologo

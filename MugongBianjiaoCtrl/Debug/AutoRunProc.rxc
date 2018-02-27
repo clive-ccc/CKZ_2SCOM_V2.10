@@ -1,0 +1,8 @@
+-cpu=rx600
+-lang=c99
+-include="E:\老大\CKZ_20180123_17029\CKZ_2SCOM_V2.10\MugongBianjiaoCtrl\..\MugongBianjiaoCtrl"
+-output=obj="E:\老大\CKZ_20180123_17029\CKZ_2SCOM_V2.10\MugongBianjiaoCtrl\Debug\AutoRunProc.obj"
+-debug
+-optimize=0
+"E:\老大\CKZ_20180123_17029\CKZ_2SCOM_V2.10\MugongBianjiaoCtrl\AutoRunProc.c"
+-nologo

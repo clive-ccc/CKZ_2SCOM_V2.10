@@ -1,0 +1,94 @@
+Optimizing Linkage Editor (V.10.02.00.000)        15-Jul-2017 22:44:37
+
+*** Options ***
+
+-subcommand=E:\老大\CKZ_V1.23_RT\CKZ_V1.23_RT\MugongBianjiaoCtrl\Release\MugongBianjiaoCtrl.hlk
+-noprelink
+-nodebug
+-rom=D=R,D_1=R_1,D_2=R_2
+-nomessage
+-list="E:\老大\CKZ_V1.23_RT\CKZ_V1.23_RT\MugongBianjiaoCtrl\Release\MugongBianjiaoCtrl.map"
+-nooptimize
+-start=B_1,R_1,B_2,R_2,B,R,SU,SI/01000,C_1,C_2,C,C$*,D_1,D_2,D,P,PIntPRG,W*,L/0FFFF8100
+-nologo
+-input="E:\老大\CKZ_V1.23_RT\CKZ_V1.23_RT\MugongBianjiaoCtrl\Release\24c04.obj"
+-input="E:\老大\CKZ_V1.23_RT\CKZ_V1.23_RT\MugongBianjiaoCtrl\Release\Action.obj"
+-input="E:\老大\CKZ_V1.23_RT\CKZ_V1.23_RT\MugongBianjiaoCtrl\Release\AutoRunProc.obj"
+-input="E:\老大\CKZ_V1.23_RT\CKZ_V1.23_RT\MugongBianjiaoCtrl\Release\dbsct.obj"
+-input="E:\老大\CKZ_V1.23_RT\CKZ_V1.23_RT\MugongBianjiaoCtrl\Release\FlashSerialSST.obj"
+-input="E:\老大\CKZ_V1.23_RT\CKZ_V1.23_RT\MugongBianjiaoCtrl\Release\hwsetup.obj"
+-input="E:\老大\CKZ_V1.23_RT\CKZ_V1.23_RT\MugongBianjiaoCtrl\Release\inout.obj"
+-input="E:\老大\CKZ_V1.23_RT\CKZ_V1.23_RT\MugongBianjiaoCtrl\Release\intprg.obj"
+-input="E:\老大\CKZ_V1.23_RT\CKZ_V1.23_RT\MugongBianjiaoCtrl\Release\main.obj"
+-input="E:\老大\CKZ_V1.23_RT\CKZ_V1.23_RT\MugongBianjiaoCtrl\Release\ManualProc.obj"
+-input="E:\老大\CKZ_V1.23_RT\CKZ_V1.23_RT\MugongBianjiaoCtrl\Release\MenInit.obj"
+-input="E:\老大\CKZ_V1.23_RT\CKZ_V1.23_RT\MugongBianjiaoCtrl\Release\modbusASC.obj"
+-input="E:\老大\CKZ_V1.23_RT\CKZ_V1.23_RT\MugongBianjiaoCtrl\Release\PWM.obj"
+-input="E:\老大\CKZ_V1.23_RT\CKZ_V1.23_RT\MugongBianjiaoCtrl\Release\resetprg.obj"
+-input="E:\老大\CKZ_V1.23_RT\CKZ_V1.23_RT\MugongBianjiaoCtrl\Release\sbrk.obj"
+-input="E:\老大\CKZ_V1.23_RT\CKZ_V1.23_RT\MugongBianjiaoCtrl\Release\SPI_viaRSPI.obj"
+-input="E:\老大\CKZ_V1.23_RT\CKZ_V1.23_RT\MugongBianjiaoCtrl\Release\Timer.obj"
+-input="E:\老大\CKZ_V1.23_RT\CKZ_V1.23_RT\MugongBianjiaoCtrl\Release\uart.obj"
+-input="E:\老大\CKZ_V1.23_RT\CKZ_V1.23_RT\MugongBianjiaoCtrl\Release\vecttbl.obj"
+-library="E:\老大\CKZ_V1.23_RT\CKZ_V1.23_RT\MugongBianjiaoCtrl\Release\MugongBianjiaoCtrl.lib"
+-output="E:\老大\CKZ_V1.23_RT\CKZ_V1.23_RT\MugongBianjiaoCtrl\Release\MugongBianjiaoCtrl.abs"
+-end
+
+*** Error information ***
+
+** L1100 (W) Cannot find "L" specified in option "start"
+** L1120 (W) Section address is not assigned to "PResetPRG"
+** L1120 (W) Section address is not assigned to "FIXEDVECT"
+
+*** Mapping List ***
+
+SECTION                            START      END         SIZE   ALIGN
+
+B_1
+                                  00001000  000010ae        af   1
+R_1
+                                  000010af  000010bb         d   1
+B_2
+                                  000010bc  00001787       6cc   2
+R_2
+                                  00001788  00001947       1c0   2
+B
+                                  00001948  000067e7      4ea0   4
+R
+                                  000067e8  0000680f        28   4
+SU
+                                  00006810  0000880f      2000   4
+SI
+                                  00008810  0000a80f      2000   4
+C_1
+                                  ffff8100  ffff8113        14   1
+C_2
+                                  ffff8114  ffff8114         0   2
+C
+                                  ffff8114  ffff812b        18   4
+C$DSEC
+                                  ffff812c  ffff814f        24   4
+C$BSEC
+                                  ffff8150  ffff8167        18   4
+C$VECT
+                                  ffff8168  ffff8567       400   4
+D_1
+                                  ffff8568  ffff8574         d   1
+D_2
+                                  ffff8576  ffff8735       1c0   2
+D
+                                  ffff8738  ffff875f        28   4
+P
+                                  ffff8760  ffffcec4      4765   1
+PIntPRG
+                                  ffffcec5  ffffd00b       147   1
+W
+                                  ffffd00c  ffffd00c         0   4
+W_1
+                                  ffffd00c  ffffd00c         0   1
+W_2
+                                  ffffd00c  ffffd05d        52   2
+PResetPRG
+                                  ffffd05e  ffffd092        35   1
+FIXEDVECT
+                                  ffffd094  ffffd0c3        30   4

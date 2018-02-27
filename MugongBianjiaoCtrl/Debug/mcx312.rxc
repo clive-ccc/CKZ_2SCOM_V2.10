@@ -1,0 +1,8 @@
+-cpu=rx600
+-lang=c99
+-include="E:\shuntouControl\shuntouControl"
+-output=obj="E:\MugongBianjiaoCtrl\MugongBianjiaoCtrl\Debug\mcx312.obj"
+-debug
+-optimize=1
+"E:\MugongBianjiaoCtrl\MugongBianjiaoCtrl\mcx312.c"
+-nologo

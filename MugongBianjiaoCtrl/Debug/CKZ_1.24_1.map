@@ -1,0 +1,91 @@
+Optimizing Linkage Editor (V.10.02.00.000)        19-Jul-2017 20:59:10
+
+*** Options ***
+
+-subcommand=E:\老大\CKZ_V1.24_RT\CKZ_V1.23_RT\MugongBianjiaoCtrl\Debug\MugongBianjiaoCtrl.hlk
+-noprelink
+-rom=D=R,D_1=R_1,D_2=R_2
+-nomessage
+-list="E:\老大\CKZ_V1.24_RT\CKZ_V1.23_RT\MugongBianjiaoCtrl\Debug\MugongBianjiaoCtrl.map"
+-nooptimize
+-start=B_1,R_1,B_2,R_2,B,R,SU,SI/00,PResetPRG/0FFFC0000,C_1,C_2,C,C$*,D_1,D_2,D,P,PIntPRG,W*,L/0FFFD0000,FIXEDVECT/0FFFFFFD0
+-nologo
+-input="E:\老大\CKZ_V1.24_RT\CKZ_V1.23_RT\MugongBianjiaoCtrl\Debug\24c04.obj"
+-input="E:\老大\CKZ_V1.24_RT\CKZ_V1.23_RT\MugongBianjiaoCtrl\Debug\Action.obj"
+-input="E:\老大\CKZ_V1.24_RT\CKZ_V1.23_RT\MugongBianjiaoCtrl\Debug\AutoRunProc.obj"
+-input="E:\老大\CKZ_V1.24_RT\CKZ_V1.23_RT\MugongBianjiaoCtrl\Debug\dbsct.obj"
+-input="E:\老大\CKZ_V1.24_RT\CKZ_V1.23_RT\MugongBianjiaoCtrl\Debug\FlashSerialSST.obj"
+-input="E:\老大\CKZ_V1.24_RT\CKZ_V1.23_RT\MugongBianjiaoCtrl\Debug\hwsetup.obj"
+-input="E:\老大\CKZ_V1.24_RT\CKZ_V1.23_RT\MugongBianjiaoCtrl\Debug\inout.obj"
+-input="E:\老大\CKZ_V1.24_RT\CKZ_V1.23_RT\MugongBianjiaoCtrl\Debug\intprg.obj"
+-input="E:\老大\CKZ_V1.24_RT\CKZ_V1.23_RT\MugongBianjiaoCtrl\Debug\main.obj"
+-input="E:\老大\CKZ_V1.24_RT\CKZ_V1.23_RT\MugongBianjiaoCtrl\Debug\ManualProc.obj"
+-input="E:\老大\CKZ_V1.24_RT\CKZ_V1.23_RT\MugongBianjiaoCtrl\Debug\MenInit.obj"
+-input="E:\老大\CKZ_V1.24_RT\CKZ_V1.23_RT\MugongBianjiaoCtrl\Debug\modbusASC.obj"
+-input="E:\老大\CKZ_V1.24_RT\CKZ_V1.23_RT\MugongBianjiaoCtrl\Debug\PWM.obj"
+-input="E:\老大\CKZ_V1.24_RT\CKZ_V1.23_RT\MugongBianjiaoCtrl\Debug\resetprg.obj"
+-input="E:\老大\CKZ_V1.24_RT\CKZ_V1.23_RT\MugongBianjiaoCtrl\Debug\sbrk.obj"
+-input="E:\老大\CKZ_V1.24_RT\CKZ_V1.23_RT\MugongBianjiaoCtrl\Debug\SPI_viaRSPI.obj"
+-input="E:\老大\CKZ_V1.24_RT\CKZ_V1.23_RT\MugongBianjiaoCtrl\Debug\Timer.obj"
+-input="E:\老大\CKZ_V1.24_RT\CKZ_V1.23_RT\MugongBianjiaoCtrl\Debug\uart.obj"
+-input="E:\老大\CKZ_V1.24_RT\CKZ_V1.23_RT\MugongBianjiaoCtrl\Debug\vecttbl.obj"
+-library="E:\老大\CKZ_V1.24_RT\CKZ_V1.23_RT\MugongBianjiaoCtrl\Debug\MugongBianjiaoCtrl.lib"
+-output="E:\老大\CKZ_V1.24_RT\CKZ_V1.23_RT\MugongBianjiaoCtrl\Debug\MugongBianjiaoCtrl.abs"
+-end
+
+*** Error information ***
+
+** L1100 (W) Cannot find "L" specified in option "start"
+
+*** Mapping List ***
+
+SECTION                            START      END         SIZE   ALIGN
+
+B_1
+                                  00000000  00000bd2       bd3   1
+R_1
+                                  00000bd3  00000be1         f   1
+B_2
+                                  00000be2  000012ab       6ca   2
+R_2
+                                  000012ac  0000146b       1c0   2
+B
+                                  0000146c  00005693      4228   4
+R
+                                  00005694  000056bf        2c   4
+SU
+                                  000056c0  000076bf      2000   4
+SI
+                                  000076c0  000096bf      2000   4
+PResetPRG
+                                  fffc0000  fffc0034        35   1
+C_1
+                                  fffd0000  fffd0013        14   1
+C_2
+                                  fffd0014  fffd0014         0   2
+C
+                                  fffd0014  fffd002b        18   4
+C$DSEC
+                                  fffd002c  fffd004f        24   4
+C$BSEC
+                                  fffd0050  fffd0067        18   4
+C$VECT
+                                  fffd0068  fffd0467       400   4
+D_1
+                                  fffd0468  fffd0476         f   1
+D_2
+                                  fffd0478  fffd0637       1c0   2
+D
+                                  fffd0638  fffd0663        2c   4
+P
+                                  fffd0664  fffdb709      b0a6   1
+PIntPRG
+                                  fffdb70a  fffdb850       147   1
+W
+                                  fffdb854  fffdb854         0   4
+W_1
+                                  fffdb854  fffdb854         0   1
+W_2
+                                  fffdb854  fffdb8e5        92   2
+FIXEDVECT
+                                  ffffffd0  ffffffff        30   4

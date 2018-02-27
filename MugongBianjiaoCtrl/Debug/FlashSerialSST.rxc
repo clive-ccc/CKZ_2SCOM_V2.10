@@ -1,0 +1,8 @@
+-cpu=rx600
+-lang=c99
+-include="E:\Works\RX600\宏达成侧孔钻\CKZ_HWD_V1.20\MugongBianjiaoCtrl"
+-output=obj="E:\老大\CKZ_V1.25_RT\CKZ_V1.23_RT\MugongBianjiaoCtrl\Debug\FlashSerialSST.obj"
+-debug
+-optimize=0
+"E:\老大\CKZ_V1.25_RT\CKZ_V1.23_RT\MugongBianjiaoCtrl\FlashSerialSST.c"
+-nologo

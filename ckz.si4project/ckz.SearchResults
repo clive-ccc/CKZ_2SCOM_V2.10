@@ -1,0 +1,387 @@
+---- CMI Matches (404 in 12 files) ----
+ReadIOState in Action.c (MugongBianjiaoCtrl) :     cMidleCoil[10].Val = cInputVal1.Val;
+ReadIOState in Action.c (MugongBianjiaoCtrl) :     cMidleCoil[15].Val = cOutputVal.Val;
+CustomPlugSelect in Action.c (MugongBianjiaoCtrl) :             temp2 = cMidleCoil[12].Val & temp1;
+CustomPlugSelect in Action.c (MugongBianjiaoCtrl) :                 cMidleCoil[12].Val &= ~temp1; 
+CustomPlugSelect in Action.c (MugongBianjiaoCtrl) :                 if((cMidleCoil[3].Val & temp2) > 0)
+CustomPlugSelect in Action.c (MugongBianjiaoCtrl) :                     cMidleCoil[3].Val &= ~temp1;
+CustomPlugSelect in Action.c (MugongBianjiaoCtrl) :                     cMidleCoil[3].Val |= temp2;  
+CustomPlugSelect in Action.c (MugongBianjiaoCtrl) :             temp3 = cMidleCoil[13].Val & temp1;
+CustomPlugSelect in Action.c (MugongBianjiaoCtrl) :                 cMidleCoil[13].Val &= ~temp1; 
+CustomPlugSelect in Action.c (MugongBianjiaoCtrl) :                 if((cMidleCoil[4].Val & temp3) > 0)
+CustomPlugSelect in Action.c (MugongBianjiaoCtrl) :                     cMidleCoil[4].Val &= ~temp1;
+CustomPlugSelect in Action.c (MugongBianjiaoCtrl) :                     cMidleCoil[4].Val |= temp3;
+CustomPlugSelect in Action.c (MugongBianjiaoCtrl) :             //if(cMidleCoil[3].Val != cDataArea[150])
+CustomPlugSelect in Action.c (MugongBianjiaoCtrl) :                 cDataArea[150] = cMidleCoil[3].Val;
+CustomPlugSelect in Action.c (MugongBianjiaoCtrl) :             //if(cMidleCoil[4].Val != cDataArea[151])
+CustomPlugSelect in Action.c (MugongBianjiaoCtrl) :                 cDataArea[151] = cMidleCoil[4].Val;
+PlugBeforHolePro in AutoRunProc.c (MugongBianjiaoCtrl) :             if((cMidleCoil[3].Val) & (1 << currentWorkHoleNum))
+PlugAfterHolePro in AutoRunProc.c (MugongBianjiaoCtrl) :             if(cMidleCoil[4].Val & (1 << currentWorkHoleNum))
+interrupt_handlers.c (MugongBianjiaoCtrl) line 94 : //void  Excep_CMTU0_CMI0(void){ }
+interrupt_handlers.c (MugongBianjiaoCtrl) line 96 : void  Excep_CMTU0_CMI1(void){ }
+interrupt_handlers.c (MugongBianjiaoCtrl) line 98 : void  Excep_CMTU1_CMI2(void){ }
+interrupt_handlers.c (MugongBianjiaoCtrl) line 100 : void  Excep_CMTU1_CMI3(void){ }
+interrupt_handlers.c (MugongBianjiaoCtrl) line 385 : //;0x02B8  TMR0_CMI0A
+interrupt_handlers.c (MugongBianjiaoCtrl) line 386 : void  Excep_TMR0_CMIA0(void){ }	
+interrupt_handlers.c (MugongBianjiaoCtrl) line 387 : //;0x02BC  TMR0_CMI0B
+interrupt_handlers.c (MugongBianjiaoCtrl) line 388 : void  Excep_TMR0_CMIB0(void){ }	
+interrupt_handlers.c (MugongBianjiaoCtrl) line 391 : //;0x02C4  TMR1_CMI1A
+interrupt_handlers.c (MugongBianjiaoCtrl) line 392 : void  Excep_TMR1_CMIA1(void){ }
+interrupt_handlers.c (MugongBianjiaoCtrl) line 393 : //;0x02C8  TMR1_CMI1B
+interrupt_handlers.c (MugongBianjiaoCtrl) line 394 : void  Excep_TMR1_CMIB1(void){ }
+interrupt_handlers.c (MugongBianjiaoCtrl) line 397 : //;0x02D0 TMR2_CMI2A
+interrupt_handlers.c (MugongBianjiaoCtrl) line 398 : void  Excep_TMR2_CMIA2(void){ }
+interrupt_handlers.c (MugongBianjiaoCtrl) line 399 : //;0x02D4  TMR2_CMI2B
+interrupt_handlers.c (MugongBianjiaoCtrl) line 400 : void  Excep_TMR2_CMIB2(void){ }
+interrupt_handlers.c (MugongBianjiaoCtrl) line 403 : //;0x02DC  TMR3_CMI3A
+interrupt_handlers.c (MugongBianjiaoCtrl) line 404 : void  Excep_TMR3_CMIA3(void){ }
+interrupt_handlers.c (MugongBianjiaoCtrl) line 405 : //;0x02E0 TMR3_CMI3B
+interrupt_handlers.c (MugongBianjiaoCtrl) line 406 : void  Excep_TMR3_CMIB3(void){ }
+intprg.c (MugongBianjiaoCtrl) line 390 : // TMR0_CMI0A
+intprg.c (MugongBianjiaoCtrl) line 391 : void Excep_TMR0_CMI0A(void){ }
+intprg.c (MugongBianjiaoCtrl) line 393 : // TMR0_CMI0B
+intprg.c (MugongBianjiaoCtrl) line 394 : void Excep_TMR0_CMI0B(void){ }
+intprg.c (MugongBianjiaoCtrl) line 399 : // TMR1_CMI1A
+intprg.c (MugongBianjiaoCtrl) line 400 : void Excep_TMR1_CMI1A(void){ }
+intprg.c (MugongBianjiaoCtrl) line 402 : // TMR1_CMI1B
+intprg.c (MugongBianjiaoCtrl) line 403 : void Excep_TMR1_CMI1B(void){ }
+intprg.c (MugongBianjiaoCtrl) line 408 : // TMR2_CMI2A
+intprg.c (MugongBianjiaoCtrl) line 409 : void Excep_TMR2_CMI2A(void){ }
+intprg.c (MugongBianjiaoCtrl) line 411 : // TMR2_CMI2B
+intprg.c (MugongBianjiaoCtrl) line 412 : void Excep_TMR2_CMI2B(void){ }
+intprg.c (MugongBianjiaoCtrl) line 417 : // TMR3_CMI3A
+intprg.c (MugongBianjiaoCtrl) line 418 : void Excep_TMR3_CMI3A(void){ }
+intprg.c (MugongBianjiaoCtrl) line 420 : // TMR3_CMI3B
+intprg.c (MugongBianjiaoCtrl) line 421 : void Excep_TMR3_CMI3B(void){ }
+iodefine.h (MugongBianjiaoCtrl) line 46 : /*       IEN(CMT0,CMI0) = 1;     expands to :                                   */
+iodefine.h (MugongBianjiaoCtrl) line 62 : /*       #pragma interrupt INT_CMT0_CMI0(vect=VECT(CMT0,CMI0))    expands to :  */
+iodefine.h (MugongBianjiaoCtrl) line 63 : /*         #pragma interrupt INT_CMT0_CMI0(vect=28)                             */
+st_cmt0::{anonCMCR}::{anonBIT} in iodefine.h (MugongBianjiaoCtrl) : 			unsigned short CMIE:1;
+st_tmr0::{anonTCR}::{anonBIT} in iodefine.h (MugongBianjiaoCtrl) : 			unsigned char CMIEB:1;
+st_tmr0::{anonTCR}::{anonBIT} in iodefine.h (MugongBianjiaoCtrl) : 			unsigned char CMIEA:1;
+st_tmr1::{anonTCR}::{anonBIT} in iodefine.h (MugongBianjiaoCtrl) : 			unsigned char CMIEB:1;
+st_tmr1::{anonTCR}::{anonBIT} in iodefine.h (MugongBianjiaoCtrl) : 			unsigned char CMIEA:1;
+enum_ir in iodefine.h (MugongBianjiaoCtrl) : IR_CMT0_CMI0,
+enum_ir in iodefine.h (MugongBianjiaoCtrl) : IR_CMT1_CMI1,
+enum_ir in iodefine.h (MugongBianjiaoCtrl) : IR_CMT2_CMI2,
+enum_ir in iodefine.h (MugongBianjiaoCtrl) : IR_CMT3_CMI3,
+enum_ir in iodefine.h (MugongBianjiaoCtrl) : IR_TMR0_CMIA0,IR_TMR0_CMIB0,IR_TMR0_OVI0,
+enum_ir in iodefine.h (MugongBianjiaoCtrl) : IR_TMR1_CMIA1,IR_TMR1_CMIB1,IR_TMR1_OVI1,
+enum_ir in iodefine.h (MugongBianjiaoCtrl) : IR_TMR2_CMIA2,IR_TMR2_CMIB2,IR_TMR2_OVI2,
+enum_ir in iodefine.h (MugongBianjiaoCtrl) : IR_TMR3_CMIA3,IR_TMR3_CMIB3,IR_TMR3_OVI3,
+enum_dtce in iodefine.h (MugongBianjiaoCtrl) : DTCE_CMT0_CMI0,
+enum_dtce in iodefine.h (MugongBianjiaoCtrl) : DTCE_CMT1_CMI1,
+enum_dtce in iodefine.h (MugongBianjiaoCtrl) : DTCE_CMT2_CMI2,
+enum_dtce in iodefine.h (MugongBianjiaoCtrl) : DTCE_CMT3_CMI3,
+enum_dtce in iodefine.h (MugongBianjiaoCtrl) : DTCE_TMR0_CMIA0=174,DTCE_TMR0_CMIB0,
+enum_dtce in iodefine.h (MugongBianjiaoCtrl) : DTCE_TMR1_CMIA1=177,DTCE_TMR1_CMIB1,
+enum_dtce in iodefine.h (MugongBianjiaoCtrl) : DTCE_TMR2_CMIA2=180,DTCE_TMR2_CMIB2,
+enum_dtce in iodefine.h (MugongBianjiaoCtrl) : DTCE_TMR3_CMIA3=183,DTCE_TMR3_CMIB3,
+enum_ier in iodefine.h (MugongBianjiaoCtrl) : IER_CMT0_CMI0=0x03,
+enum_ier in iodefine.h (MugongBianjiaoCtrl) : IER_CMT1_CMI1=0x03,
+enum_ier in iodefine.h (MugongBianjiaoCtrl) : IER_CMT2_CMI2=0x03,
+enum_ier in iodefine.h (MugongBianjiaoCtrl) : IER_CMT3_CMI3=0x03,
+enum_ier in iodefine.h (MugongBianjiaoCtrl) : IER_TMR0_CMIA0=0x15,IER_TMR0_CMIB0=0x15,IER_TMR0_OVI0=0x16,
+enum_ier in iodefine.h (MugongBianjiaoCtrl) : IER_TMR1_CMIA1=0x16,IER_TMR1_CMIB1=0x16,IER_TMR1_OVI1=0x16,
+enum_ier in iodefine.h (MugongBianjiaoCtrl) : IER_TMR2_CMIA2=0x16,IER_TMR2_CMIB2=0x16,IER_TMR2_OVI2=0x16,
+enum_ier in iodefine.h (MugongBianjiaoCtrl) : IER_TMR3_CMIA3=0x16,IER_TMR3_CMIB3=0x17,IER_TMR3_OVI3=0x17,
+enum_ipr in iodefine.h (MugongBianjiaoCtrl) : IPR_CMT0_CMI0=0x04,
+enum_ipr in iodefine.h (MugongBianjiaoCtrl) : IPR_CMT1_CMI1=0x05,
+enum_ipr in iodefine.h (MugongBianjiaoCtrl) : IPR_CMT2_CMI2=0x06,
+enum_ipr in iodefine.h (MugongBianjiaoCtrl) : IPR_CMT3_CMI3=0x07,
+enum_ipr in iodefine.h (MugongBianjiaoCtrl) : IPR_TMR0_CMIA0=0x68,IPR_TMR0_CMIB0=0x68,IPR_TMR0_OVI0=0x68,
+enum_ipr in iodefine.h (MugongBianjiaoCtrl) : IPR_TMR1_CMIA1=0x69,IPR_TMR1_CMIB1=0x69,IPR_TMR1_OVI1=0x69,
+enum_ipr in iodefine.h (MugongBianjiaoCtrl) : IPR_TMR2_CMIA2=0x6A,IPR_TMR2_CMIB2=0x6A,IPR_TMR2_OVI2=0x6A,
+enum_ipr in iodefine.h (MugongBianjiaoCtrl) : IPR_TMR3_CMIA3=0x6B,IPR_TMR3_CMIB3=0x6B,IPR_TMR3_OVI3=0x6B,
+iodefine.h (MugongBianjiaoCtrl) line 6704 : #define	IEN_CMT0_CMI0		IEN4
+iodefine.h (MugongBianjiaoCtrl) line 6705 : #define	IEN_CMT1_CMI1		IEN5
+iodefine.h (MugongBianjiaoCtrl) line 6706 : #define	IEN_CMT2_CMI2		IEN6
+iodefine.h (MugongBianjiaoCtrl) line 6707 : #define	IEN_CMT3_CMI3		IEN7
+iodefine.h (MugongBianjiaoCtrl) line 6813 : #define	IEN_TMR0_CMIA0		IEN6
+iodefine.h (MugongBianjiaoCtrl) line 6814 : #define	IEN_TMR0_CMIB0		IEN7
+iodefine.h (MugongBianjiaoCtrl) line 6816 : #define	IEN_TMR1_CMIA1		IEN1
+iodefine.h (MugongBianjiaoCtrl) line 6817 : #define	IEN_TMR1_CMIB1		IEN2
+iodefine.h (MugongBianjiaoCtrl) line 6819 : #define	IEN_TMR2_CMIA2		IEN4
+iodefine.h (MugongBianjiaoCtrl) line 6820 : #define	IEN_TMR2_CMIB2		IEN5
+iodefine.h (MugongBianjiaoCtrl) line 6822 : #define	IEN_TMR3_CMIA3		IEN7
+iodefine.h (MugongBianjiaoCtrl) line 6823 : #define	IEN_TMR3_CMIB3		IEN0
+iodefine.h (MugongBianjiaoCtrl) line 6868 : #define	VECT_CMT0_CMI0		28
+iodefine.h (MugongBianjiaoCtrl) line 6869 : #define	VECT_CMT1_CMI1		29
+iodefine.h (MugongBianjiaoCtrl) line 6870 : #define	VECT_CMT2_CMI2		30
+iodefine.h (MugongBianjiaoCtrl) line 6871 : #define	VECT_CMT3_CMI3		31
+iodefine.h (MugongBianjiaoCtrl) line 6977 : #define	VECT_TMR0_CMIA0		174
+iodefine.h (MugongBianjiaoCtrl) line 6978 : #define	VECT_TMR0_CMIB0		175
+iodefine.h (MugongBianjiaoCtrl) line 6980 : #define	VECT_TMR1_CMIA1		177
+iodefine.h (MugongBianjiaoCtrl) line 6981 : #define	VECT_TMR1_CMIB1		178
+iodefine.h (MugongBianjiaoCtrl) line 6983 : #define	VECT_TMR2_CMIA2		180
+iodefine.h (MugongBianjiaoCtrl) line 6984 : #define	VECT_TMR2_CMIB2		181
+iodefine.h (MugongBianjiaoCtrl) line 6986 : #define	VECT_TMR3_CMIA3		183
+iodefine.h (MugongBianjiaoCtrl) line 6987 : #define	VECT_TMR3_CMIB3		184
+PlugInit in MenInit.c (MugongBianjiaoCtrl) :     cMidleCoil[3].Val = cDataArea[150];
+PlugInit in MenInit.c (MugongBianjiaoCtrl) :     cMidleCoil[4].Val = cDataArea[151];
+PlugInit in MenInit.c (MugongBianjiaoCtrl) :     if(cMidleCoil[3].Val == 0xffff && cMidleCoil[4].Val == 0xffff)
+PlugInit in MenInit.c (MugongBianjiaoCtrl) :     else if(cMidleCoil[3].Val == 0xffff)
+PlugInit in MenInit.c (MugongBianjiaoCtrl) :     else if(cMidleCoil[4].Val == 0xffff)
+modbusASC.c (MugongBianjiaoCtrl) line 25 : WORD_BITS  cMidleCoil[50];
+ReadCoil in modbusASC.c (MugongBianjiaoCtrl) :     unsigned char  * coils = (unsigned char *)(&cMidleCoil[0]);
+WriteCoil in modbusASC.c (MugongBianjiaoCtrl) :         unsigned char  * coils = (unsigned char *)(&cMidleCoil[0]);
+modusASC.h (MugongBianjiaoCtrl) line 17 : extern WORD_BITS cMidleCoil[50];
+modusASC.h (MugongBianjiaoCtrl) line 47 : #define	M00		cMidleCoil[0].bits.b0
+modusASC.h (MugongBianjiaoCtrl) line 48 : #define	M01		cMidleCoil[0].bits.b1
+modusASC.h (MugongBianjiaoCtrl) line 49 : #define	M02		cMidleCoil[0].bits.b2
+modusASC.h (MugongBianjiaoCtrl) line 50 : #define	M03		cMidleCoil[0].bits.b3
+modusASC.h (MugongBianjiaoCtrl) line 51 : #define	M04		cMidleCoil[0].bits.b4
+modusASC.h (MugongBianjiaoCtrl) line 52 : #define	M05		cMidleCoil[0].bits.b5
+modusASC.h (MugongBianjiaoCtrl) line 53 : #define	M06		cMidleCoil[0].bits.b6
+modusASC.h (MugongBianjiaoCtrl) line 54 : #define	M07		cMidleCoil[0].bits.b7
+modusASC.h (MugongBianjiaoCtrl) line 55 : #define	M08		cMidleCoil[0].bits.b8
+modusASC.h (MugongBianjiaoCtrl) line 56 : #define	M09		cMidleCoil[0].bits.b9
+modusASC.h (MugongBianjiaoCtrl) line 57 : #define	M10		cMidleCoil[0].bits.b10
+modusASC.h (MugongBianjiaoCtrl) line 58 : #define	M11		cMidleCoil[0].bits.b11
+modusASC.h (MugongBianjiaoCtrl) line 59 : #define	M12		cMidleCoil[0].bits.b12
+modusASC.h (MugongBianjiaoCtrl) line 60 : #define	M13		cMidleCoil[0].bits.b13
+modusASC.h (MugongBianjiaoCtrl) line 61 : #define	M14		cMidleCoil[0].bits.b14
+modusASC.h (MugongBianjiaoCtrl) line 62 : #define	M15		cMidleCoil[0].bits.b15
+modusASC.h (MugongBianjiaoCtrl) line 64 : #define	M16		cMidleCoil[1].bits.b0
+modusASC.h (MugongBianjiaoCtrl) line 65 : #define	M17		cMidleCoil[1].bits.b1
+modusASC.h (MugongBianjiaoCtrl) line 66 : #define	M18		cMidleCoil[1].bits.b2
+modusASC.h (MugongBianjiaoCtrl) line 67 : #define	M19		cMidleCoil[1].bits.b3
+modusASC.h (MugongBianjiaoCtrl) line 68 : #define	M20		cMidleCoil[1].bits.b4
+modusASC.h (MugongBianjiaoCtrl) line 69 : #define	M21		cMidleCoil[1].bits.b5
+modusASC.h (MugongBianjiaoCtrl) line 70 : #define	M22		cMidleCoil[1].bits.b6
+modusASC.h (MugongBianjiaoCtrl) line 71 : #define	M23		cMidleCoil[1].bits.b7
+modusASC.h (MugongBianjiaoCtrl) line 72 : #define	M24		cMidleCoil[1].bits.b8
+modusASC.h (MugongBianjiaoCtrl) line 73 : #define	M25		cMidleCoil[1].bits.b9
+modusASC.h (MugongBianjiaoCtrl) line 74 : #define	M26		cMidleCoil[1].bits.b10
+modusASC.h (MugongBianjiaoCtrl) line 75 : #define	M27		cMidleCoil[1].bits.b11
+modusASC.h (MugongBianjiaoCtrl) line 76 : #define	M28		cMidleCoil[1].bits.b12
+modusASC.h (MugongBianjiaoCtrl) line 77 : #define	M29		cMidleCoil[1].bits.b13
+modusASC.h (MugongBianjiaoCtrl) line 78 : #define	M30		cMidleCoil[1].bits.b14
+modusASC.h (MugongBianjiaoCtrl) line 79 : #define	M31		cMidleCoil[1].bits.b15
+modusASC.h (MugongBianjiaoCtrl) line 81 : #define	M32		cMidleCoil[2].bits.b0
+modusASC.h (MugongBianjiaoCtrl) line 82 : #define	M33		cMidleCoil[2].bits.b1
+modusASC.h (MugongBianjiaoCtrl) line 83 : #define	M34		cMidleCoil[2].bits.b2
+modusASC.h (MugongBianjiaoCtrl) line 84 : #define	M35		cMidleCoil[2].bits.b3
+modusASC.h (MugongBianjiaoCtrl) line 85 : #define	M36		cMidleCoil[2].bits.b4
+modusASC.h (MugongBianjiaoCtrl) line 86 : #define	M37		cMidleCoil[2].bits.b5
+modusASC.h (MugongBianjiaoCtrl) line 87 : #define	M38		cMidleCoil[2].bits.b6
+modusASC.h (MugongBianjiaoCtrl) line 88 : #define	M39		cMidleCoil[2].bits.b7
+modusASC.h (MugongBianjiaoCtrl) line 89 : #define	M40		cMidleCoil[2].bits.b8
+modusASC.h (MugongBianjiaoCtrl) line 90 : #define	M41		cMidleCoil[2].bits.b9
+modusASC.h (MugongBianjiaoCtrl) line 91 : #define	M42		cMidleCoil[2].bits.b10
+modusASC.h (MugongBianjiaoCtrl) line 92 : #define	M43		cMidleCoil[2].bits.b11
+modusASC.h (MugongBianjiaoCtrl) line 93 : #define	M44		cMidleCoil[2].bits.b12
+modusASC.h (MugongBianjiaoCtrl) line 94 : #define	M45		cMidleCoil[2].bits.b13
+modusASC.h (MugongBianjiaoCtrl) line 95 : #define	M46		cMidleCoil[2].bits.b14
+modusASC.h (MugongBianjiaoCtrl) line 96 : #define	M47		cMidleCoil[2].bits.b15
+modusASC.h (MugongBianjiaoCtrl) line 98 : #define	M48		cMidleCoil[3].bits.b0
+modusASC.h (MugongBianjiaoCtrl) line 99 : #define	M49		cMidleCoil[3].bits.b1
+modusASC.h (MugongBianjiaoCtrl) line 100 : #define	M50		cMidleCoil[3].bits.b2
+modusASC.h (MugongBianjiaoCtrl) line 101 : #define	M51		cMidleCoil[3].bits.b3
+modusASC.h (MugongBianjiaoCtrl) line 102 : #define	M52		cMidleCoil[3].bits.b4
+modusASC.h (MugongBianjiaoCtrl) line 103 : #define	M53		cMidleCoil[3].bits.b5
+modusASC.h (MugongBianjiaoCtrl) line 104 : #define	M54		cMidleCoil[3].bits.b6
+modusASC.h (MugongBianjiaoCtrl) line 105 : #define	M55		cMidleCoil[3].bits.b7
+modusASC.h (MugongBianjiaoCtrl) line 106 : #define	M56		cMidleCoil[3].bits.b8
+modusASC.h (MugongBianjiaoCtrl) line 107 : #define	M57		cMidleCoil[3].bits.b9
+modusASC.h (MugongBianjiaoCtrl) line 108 : #define	M58		cMidleCoil[3].bits.b10
+modusASC.h (MugongBianjiaoCtrl) line 109 : #define	M59		cMidleCoil[3].bits.b11
+modusASC.h (MugongBianjiaoCtrl) line 110 : #define	M60		cMidleCoil[3].bits.b12
+modusASC.h (MugongBianjiaoCtrl) line 111 : #define	M61		cMidleCoil[3].bits.b13
+modusASC.h (MugongBianjiaoCtrl) line 112 : #define	M62		cMidleCoil[3].bits.b14
+modusASC.h (MugongBianjiaoCtrl) line 113 : #define	M63		cMidleCoil[3].bits.b15
+modusASC.h (MugongBianjiaoCtrl) line 115 : #define	M64		cMidleCoil[4].bits.b0
+modusASC.h (MugongBianjiaoCtrl) line 116 : #define	M65		cMidleCoil[4].bits.b1
+modusASC.h (MugongBianjiaoCtrl) line 117 : #define	M66		cMidleCoil[4].bits.b2
+modusASC.h (MugongBianjiaoCtrl) line 118 : #define	M67		cMidleCoil[4].bits.b3
+modusASC.h (MugongBianjiaoCtrl) line 119 : #define	M68		cMidleCoil[4].bits.b4
+modusASC.h (MugongBianjiaoCtrl) line 120 : #define	M69		cMidleCoil[4].bits.b5
+modusASC.h (MugongBianjiaoCtrl) line 121 : #define	M70		cMidleCoil[4].bits.b6
+modusASC.h (MugongBianjiaoCtrl) line 122 : #define	M71		cMidleCoil[4].bits.b7
+modusASC.h (MugongBianjiaoCtrl) line 123 : #define	M72		cMidleCoil[4].bits.b8
+modusASC.h (MugongBianjiaoCtrl) line 124 : #define	M73		cMidleCoil[4].bits.b9
+modusASC.h (MugongBianjiaoCtrl) line 125 : #define	M74		cMidleCoil[4].bits.b10
+modusASC.h (MugongBianjiaoCtrl) line 126 : #define	M75		cMidleCoil[4].bits.b11
+modusASC.h (MugongBianjiaoCtrl) line 127 : #define	M76		cMidleCoil[4].bits.b12
+modusASC.h (MugongBianjiaoCtrl) line 128 : #define	M77		cMidleCoil[4].bits.b13
+modusASC.h (MugongBianjiaoCtrl) line 129 : #define	M78		cMidleCoil[4].bits.b14
+modusASC.h (MugongBianjiaoCtrl) line 130 : #define	M79		cMidleCoil[4].bits.b15
+modusASC.h (MugongBianjiaoCtrl) line 132 : #define	M80		cMidleCoil[5].bits.b0
+modusASC.h (MugongBianjiaoCtrl) line 133 : #define	M81		cMidleCoil[5].bits.b1
+modusASC.h (MugongBianjiaoCtrl) line 134 : #define	M82		cMidleCoil[5].bits.b2
+modusASC.h (MugongBianjiaoCtrl) line 135 : #define	M83		cMidleCoil[5].bits.b3
+modusASC.h (MugongBianjiaoCtrl) line 136 : #define	M84		cMidleCoil[5].bits.b4
+modusASC.h (MugongBianjiaoCtrl) line 137 : #define	M85		cMidleCoil[5].bits.b5
+modusASC.h (MugongBianjiaoCtrl) line 138 : #define	M86		cMidleCoil[5].bits.b6
+modusASC.h (MugongBianjiaoCtrl) line 139 : #define	M87		cMidleCoil[5].bits.b7
+modusASC.h (MugongBianjiaoCtrl) line 140 : #define	M88		cMidleCoil[5].bits.b8
+modusASC.h (MugongBianjiaoCtrl) line 141 : #define	M89		cMidleCoil[5].bits.b9
+modusASC.h (MugongBianjiaoCtrl) line 142 : #define	M90		cMidleCoil[5].bits.b10
+modusASC.h (MugongBianjiaoCtrl) line 143 : #define	M91		cMidleCoil[5].bits.b11
+modusASC.h (MugongBianjiaoCtrl) line 144 : #define	M92		cMidleCoil[5].bits.b12
+modusASC.h (MugongBianjiaoCtrl) line 145 : #define	M93		cMidleCoil[5].bits.b13
+modusASC.h (MugongBianjiaoCtrl) line 146 : #define	M94		cMidleCoil[5].bits.b14
+modusASC.h (MugongBianjiaoCtrl) line 147 : #define	M95		cMidleCoil[5].bits.b15
+modusASC.h (MugongBianjiaoCtrl) line 149 : #define	M96			cMidleCoil[6].bits.b0
+modusASC.h (MugongBianjiaoCtrl) line 150 : #define	M97			cMidleCoil[6].bits.b1
+modusASC.h (MugongBianjiaoCtrl) line 151 : #define	M98			cMidleCoil[6].bits.b2
+modusASC.h (MugongBianjiaoCtrl) line 152 : #define	M99			cMidleCoil[6].bits.b3
+modusASC.h (MugongBianjiaoCtrl) line 153 : #define	M100		cMidleCoil[6].bits.b4
+modusASC.h (MugongBianjiaoCtrl) line 154 : #define	M101		cMidleCoil[6].bits.b5
+modusASC.h (MugongBianjiaoCtrl) line 155 : #define	M102		cMidleCoil[6].bits.b6
+modusASC.h (MugongBianjiaoCtrl) line 156 : #define	M103		cMidleCoil[6].bits.b7
+modusASC.h (MugongBianjiaoCtrl) line 157 : #define	M104		cMidleCoil[6].bits.b8
+modusASC.h (MugongBianjiaoCtrl) line 158 : #define	M105		cMidleCoil[6].bits.b9
+modusASC.h (MugongBianjiaoCtrl) line 159 : #define	M106		cMidleCoil[6].bits.b10
+modusASC.h (MugongBianjiaoCtrl) line 160 : #define	M107		cMidleCoil[6].bits.b11
+modusASC.h (MugongBianjiaoCtrl) line 161 : #define	M108		cMidleCoil[6].bits.b12
+modusASC.h (MugongBianjiaoCtrl) line 162 : #define	M109		cMidleCoil[6].bits.b13
+modusASC.h (MugongBianjiaoCtrl) line 163 : #define	M110		cMidleCoil[6].bits.b14
+modusASC.h (MugongBianjiaoCtrl) line 164 : #define	M111		cMidleCoil[6].bits.b15
+modusASC.h (MugongBianjiaoCtrl) line 166 : #define	M112		cMidleCoil[7].bits.b0
+modusASC.h (MugongBianjiaoCtrl) line 167 : #define	M113		cMidleCoil[7].bits.b1
+modusASC.h (MugongBianjiaoCtrl) line 168 : #define	M114		cMidleCoil[7].bits.b2
+modusASC.h (MugongBianjiaoCtrl) line 169 : #define	M115		cMidleCoil[7].bits.b3
+modusASC.h (MugongBianjiaoCtrl) line 170 : #define	M116		cMidleCoil[7].bits.b4
+modusASC.h (MugongBianjiaoCtrl) line 171 : #define	M117		cMidleCoil[7].bits.b5
+modusASC.h (MugongBianjiaoCtrl) line 172 : #define	M118		cMidleCoil[7].bits.b6
+modusASC.h (MugongBianjiaoCtrl) line 173 : #define	M119		cMidleCoil[7].bits.b7
+modusASC.h (MugongBianjiaoCtrl) line 174 : #define	M120		cMidleCoil[7].bits.b8
+modusASC.h (MugongBianjiaoCtrl) line 175 : #define	M121		cMidleCoil[7].bits.b9
+modusASC.h (MugongBianjiaoCtrl) line 176 : #define	M122		cMidleCoil[7].bits.b10
+modusASC.h (MugongBianjiaoCtrl) line 177 : #define	M123		cMidleCoil[7].bits.b11
+modusASC.h (MugongBianjiaoCtrl) line 178 : #define	M124		cMidleCoil[7].bits.b12
+modusASC.h (MugongBianjiaoCtrl) line 179 : #define	M125		cMidleCoil[7].bits.b13
+modusASC.h (MugongBianjiaoCtrl) line 180 : #define	M126		cMidleCoil[7].bits.b14
+modusASC.h (MugongBianjiaoCtrl) line 181 : #define	M127		cMidleCoil[7].bits.b15
+modusASC.h (MugongBianjiaoCtrl) line 184 : #define	M128		cMidleCoil[8].bits.b0
+modusASC.h (MugongBianjiaoCtrl) line 185 : #define	M129		cMidleCoil[8].bits.b1
+modusASC.h (MugongBianjiaoCtrl) line 186 : #define	M130		cMidleCoil[8].bits.b2
+modusASC.h (MugongBianjiaoCtrl) line 187 : #define	M131		cMidleCoil[8].bits.b3
+modusASC.h (MugongBianjiaoCtrl) line 188 : #define	M132		cMidleCoil[8].bits.b4
+modusASC.h (MugongBianjiaoCtrl) line 189 : #define	M133		cMidleCoil[8].bits.b5
+modusASC.h (MugongBianjiaoCtrl) line 190 : #define	M134		cMidleCoil[8].bits.b6
+modusASC.h (MugongBianjiaoCtrl) line 191 : #define	M135		cMidleCoil[8].bits.b7
+modusASC.h (MugongBianjiaoCtrl) line 192 : #define	M136		cMidleCoil[8].bits.b8
+modusASC.h (MugongBianjiaoCtrl) line 193 : #define	M137		cMidleCoil[8].bits.b9
+modusASC.h (MugongBianjiaoCtrl) line 194 : #define	M138		cMidleCoil[8].bits.b10
+modusASC.h (MugongBianjiaoCtrl) line 195 : #define	M139		cMidleCoil[8].bits.b11
+modusASC.h (MugongBianjiaoCtrl) line 196 : #define	M140		cMidleCoil[8].bits.b12
+modusASC.h (MugongBianjiaoCtrl) line 197 : #define	M141		cMidleCoil[8].bits.b13
+modusASC.h (MugongBianjiaoCtrl) line 198 : #define	M142		cMidleCoil[8].bits.b14
+modusASC.h (MugongBianjiaoCtrl) line 199 : #define	M143		cMidleCoil[8].bits.b15
+modusASC.h (MugongBianjiaoCtrl) line 201 : #define	M144		cMidleCoil[9].bits.b0
+modusASC.h (MugongBianjiaoCtrl) line 202 : #define	M145		cMidleCoil[9].bits.b1
+modusASC.h (MugongBianjiaoCtrl) line 203 : #define	M146		cMidleCoil[9].bits.b2
+modusASC.h (MugongBianjiaoCtrl) line 204 : #define	M147		cMidleCoil[9].bits.b3
+modusASC.h (MugongBianjiaoCtrl) line 205 : #define	M148		cMidleCoil[9].bits.b4
+modusASC.h (MugongBianjiaoCtrl) line 206 : #define	M149		cMidleCoil[9].bits.b5
+modusASC.h (MugongBianjiaoCtrl) line 207 : #define	M150		cMidleCoil[9].bits.b6
+modusASC.h (MugongBianjiaoCtrl) line 208 : #define	M151		cMidleCoil[9].bits.b7
+modusASC.h (MugongBianjiaoCtrl) line 209 : #define	M152		cMidleCoil[9].bits.b8
+modusASC.h (MugongBianjiaoCtrl) line 210 : #define	M153		cMidleCoil[9].bits.b9
+modusASC.h (MugongBianjiaoCtrl) line 211 : #define	M154		cMidleCoil[9].bits.b10
+modusASC.h (MugongBianjiaoCtrl) line 212 : #define	M155		cMidleCoil[9].bits.b11
+modusASC.h (MugongBianjiaoCtrl) line 213 : #define	M156		cMidleCoil[9].bits.b12
+modusASC.h (MugongBianjiaoCtrl) line 214 : #define	M157		cMidleCoil[9].bits.b13
+modusASC.h (MugongBianjiaoCtrl) line 215 : #define	M158		cMidleCoil[9].bits.b14
+modusASC.h (MugongBianjiaoCtrl) line 216 : #define	M159		cMidleCoil[9].bits.b15
+modusASC.h (MugongBianjiaoCtrl) line 218 : #define	M160		cMidleCoil[10].bits.b0
+modusASC.h (MugongBianjiaoCtrl) line 219 : #define	M161		cMidleCoil[10].bits.b1
+modusASC.h (MugongBianjiaoCtrl) line 220 : #define	M162		cMidleCoil[10].bits.b2
+modusASC.h (MugongBianjiaoCtrl) line 221 : #define	M163		cMidleCoil[10].bits.b3
+modusASC.h (MugongBianjiaoCtrl) line 222 : #define	M164		cMidleCoil[10].bits.b4
+modusASC.h (MugongBianjiaoCtrl) line 223 : #define	M165		cMidleCoil[10].bits.b5
+modusASC.h (MugongBianjiaoCtrl) line 224 : #define	M166		cMidleCoil[10].bits.b6
+modusASC.h (MugongBianjiaoCtrl) line 225 : #define	M167		cMidleCoil[10].bits.b7
+modusASC.h (MugongBianjiaoCtrl) line 226 : #define	M168		cMidleCoil[10].bits.b8
+modusASC.h (MugongBianjiaoCtrl) line 227 : #define	M169		cMidleCoil[10].bits.b9
+modusASC.h (MugongBianjiaoCtrl) line 228 : #define	M170		cMidleCoil[10].bits.b10
+modusASC.h (MugongBianjiaoCtrl) line 229 : #define	M171		cMidleCoil[10].bits.b11
+modusASC.h (MugongBianjiaoCtrl) line 230 : #define	M172		cMidleCoil[10].bits.b12
+modusASC.h (MugongBianjiaoCtrl) line 231 : #define	M173		cMidleCoil[10].bits.b13
+modusASC.h (MugongBianjiaoCtrl) line 232 : #define	M174		cMidleCoil[10].bits.b14
+modusASC.h (MugongBianjiaoCtrl) line 233 : #define	M175		cMidleCoil[10].bits.b15
+modusASC.h (MugongBianjiaoCtrl) line 235 : #define	M192		cMidleCoil[12].bits.b0
+modusASC.h (MugongBianjiaoCtrl) line 236 : #define	M193		cMidleCoil[12].bits.b1
+modusASC.h (MugongBianjiaoCtrl) line 237 : #define	M194		cMidleCoil[12].bits.b2
+modusASC.h (MugongBianjiaoCtrl) line 238 : #define	M195		cMidleCoil[12].bits.b3
+modusASC.h (MugongBianjiaoCtrl) line 239 : #define	M196		cMidleCoil[12].bits.b4
+modusASC.h (MugongBianjiaoCtrl) line 240 : #define	M197		cMidleCoil[12].bits.b5
+modusASC.h (MugongBianjiaoCtrl) line 241 : #define	M198		cMidleCoil[12].bits.b6
+modusASC.h (MugongBianjiaoCtrl) line 242 : #define	M199		cMidleCoil[12].bits.b7
+modusASC.h (MugongBianjiaoCtrl) line 243 : #define	M200		cMidleCoil[12].bits.b8
+modusASC.h (MugongBianjiaoCtrl) line 244 : #define	M201		cMidleCoil[12].bits.b9
+modusASC.h (MugongBianjiaoCtrl) line 245 : #define	M202		cMidleCoil[12].bits.b10
+modusASC.h (MugongBianjiaoCtrl) line 246 : #define	M203		cMidleCoil[12].bits.b11
+modusASC.h (MugongBianjiaoCtrl) line 247 : #define	M204		cMidleCoil[12].bits.b12
+modusASC.h (MugongBianjiaoCtrl) line 248 : #define	M205		cMidleCoil[12].bits.b13
+modusASC.h (MugongBianjiaoCtrl) line 249 : #define	M206		cMidleCoil[12].bits.b14
+modusASC.h (MugongBianjiaoCtrl) line 250 : #define	M207		cMidleCoil[12].bits.b15
+modusASC.h (MugongBianjiaoCtrl) line 252 : #define	M208		cMidleCoil[13].bits.b0
+modusASC.h (MugongBianjiaoCtrl) line 253 : #define	M209		cMidleCoil[13].bits.b1
+modusASC.h (MugongBianjiaoCtrl) line 254 : #define	M210		cMidleCoil[13].bits.b2
+modusASC.h (MugongBianjiaoCtrl) line 255 : #define	M211		cMidleCoil[13].bits.b3
+modusASC.h (MugongBianjiaoCtrl) line 256 : #define	M212		cMidleCoil[13].bits.b4
+modusASC.h (MugongBianjiaoCtrl) line 257 : #define	M213		cMidleCoil[13].bits.b5
+modusASC.h (MugongBianjiaoCtrl) line 258 : #define	M214		cMidleCoil[13].bits.b6
+modusASC.h (MugongBianjiaoCtrl) line 259 : #define	M215		cMidleCoil[13].bits.b7
+modusASC.h (MugongBianjiaoCtrl) line 260 : #define	M216		cMidleCoil[13].bits.b8
+modusASC.h (MugongBianjiaoCtrl) line 261 : #define	M217		cMidleCoil[13].bits.b9
+modusASC.h (MugongBianjiaoCtrl) line 262 : #define	M218		cMidleCoil[13].bits.b10
+modusASC.h (MugongBianjiaoCtrl) line 263 : #define	M219		cMidleCoil[13].bits.b11
+modusASC.h (MugongBianjiaoCtrl) line 264 : #define	M220		cMidleCoil[13].bits.b12
+modusASC.h (MugongBianjiaoCtrl) line 265 : #define	M221		cMidleCoil[13].bits.b13
+modusASC.h (MugongBianjiaoCtrl) line 266 : #define	M222		cMidleCoil[13].bits.b14
+modusASC.h (MugongBianjiaoCtrl) line 267 : #define	M223		cMidleCoil[13].bits.b15
+modusASC.h (MugongBianjiaoCtrl) line 269 : #define	M224		cMidleCoil[13].bits.b0
+modusASC.h (MugongBianjiaoCtrl) line 270 : #define	M225		cMidleCoil[13].bits.b1
+modusASC.h (MugongBianjiaoCtrl) line 271 : #define	M226		cMidleCoil[13].bits.b2
+modusASC.h (MugongBianjiaoCtrl) line 272 : #define	M227		cMidleCoil[13].bits.b3
+modusASC.h (MugongBianjiaoCtrl) line 273 : #define	M228		cMidleCoil[13].bits.b4
+modusASC.h (MugongBianjiaoCtrl) line 274 : #define	M229		cMidleCoil[13].bits.b5
+modusASC.h (MugongBianjiaoCtrl) line 275 : #define	M230		cMidleCoil[13].bits.b6
+modusASC.h (MugongBianjiaoCtrl) line 276 : #define	M231		cMidleCoil[13].bits.b7
+modusASC.h (MugongBianjiaoCtrl) line 277 : #define	M232		cMidleCoil[13].bits.b8
+modusASC.h (MugongBianjiaoCtrl) line 278 : #define	M233		cMidleCoil[13].bits.b9
+modusASC.h (MugongBianjiaoCtrl) line 279 : #define	M234		cMidleCoil[13].bits.b10
+modusASC.h (MugongBianjiaoCtrl) line 280 : #define	M235		cMidleCoil[13].bits.b11
+modusASC.h (MugongBianjiaoCtrl) line 281 : #define	M236		cMidleCoil[13].bits.b12
+modusASC.h (MugongBianjiaoCtrl) line 282 : #define	M237		cMidleCoil[13].bits.b13
+modusASC.h (MugongBianjiaoCtrl) line 283 : #define	M238		cMidleCoil[13].bits.b14
+modusASC.h (MugongBianjiaoCtrl) line 284 : #define	M239		cMidleCoil[13].bits.b15
+{anonStepperDataInfo} in PWM.h (MugongBianjiaoCtrl) : 	unsigned short cMinSpeed;
+{anonStepperDataInfo} in PWM.h (MugongBianjiaoCtrl) : 	long cMinLen;	
+SetupTimer0Interrupt in Timer.c (MugongBianjiaoCtrl) : 	CMT0.CMCR.BIT.CMIE = 1;
+SetupTimer0Interrupt in Timer.c (MugongBianjiaoCtrl) : 	IEN( CMT0,CMI0 ) = 1;
+SetupTimer0Interrupt in Timer.c (MugongBianjiaoCtrl) : 	IPR( CMT0,CMI0 ) = TIMER0_INTERRUPT_PRIORITY;
+SetupTimer2Interrupt in Timer.c (MugongBianjiaoCtrl) : 	CMT2.CMCR.BIT.CMIE = 1;
+SetupTimer2Interrupt in Timer.c (MugongBianjiaoCtrl) : 	IEN( CMT2,CMI2 ) = 1;
+SetupTimer2Interrupt in Timer.c (MugongBianjiaoCtrl) : 	IPR( CMT2,CMI2 ) = 6;
+Timer.c (MugongBianjiaoCtrl) line 69 : #pragma interrupt ( Timer0TickISR( vect = VECT( CMT0,CMI0 ), enable ) )
+Timer.c (MugongBianjiaoCtrl) line 90 : #pragma interrupt ( Timer2TickISR( vect = VECT( CMT2,CMI2 ), enable ) )
+uart.c (MugongBianjiaoCtrl) line 34 : //unsigned short cDataArea[512],cMidleCoil[50];
+vect.h (MugongBianjiaoCtrl) line 582 : // TMR0_CMI0A
+vect.h (MugongBianjiaoCtrl) line 583 : #pragma interrupt (Excep_TMR0_CMI0A(vect=174))
+vect.h (MugongBianjiaoCtrl) line 584 : void Excep_TMR0_CMI0A(void);
+vect.h (MugongBianjiaoCtrl) line 586 : // TMR0_CMI0B
+vect.h (MugongBianjiaoCtrl) line 587 : #pragma interrupt (Excep_TMR0_CMI0B(vect=175))
+vect.h (MugongBianjiaoCtrl) line 588 : void Excep_TMR0_CMI0B(void);
+vect.h (MugongBianjiaoCtrl) line 594 : // TMR1_CMI1A
+vect.h (MugongBianjiaoCtrl) line 595 : #pragma interrupt (Excep_TMR1_CMI1A(vect=177))
+vect.h (MugongBianjiaoCtrl) line 596 : void Excep_TMR1_CMI1A(void);
+vect.h (MugongBianjiaoCtrl) line 598 : // TMR1_CMI1B
+vect.h (MugongBianjiaoCtrl) line 599 : #pragma interrupt (Excep_TMR1_CMI1B(vect=178))
+vect.h (MugongBianjiaoCtrl) line 600 : void Excep_TMR1_CMI1B(void);
+vect.h (MugongBianjiaoCtrl) line 606 : // TMR2_CMI2A
+vect.h (MugongBianjiaoCtrl) line 607 : #pragma interrupt (Excep_TMR2_CMI2A(vect=180))
+vect.h (MugongBianjiaoCtrl) line 608 : void Excep_TMR2_CMI2A(void);
+vect.h (MugongBianjiaoCtrl) line 610 : // TMR2_CMI2B
+vect.h (MugongBianjiaoCtrl) line 611 : #pragma interrupt (Excep_TMR2_CMI2B(vect=181))
+vect.h (MugongBianjiaoCtrl) line 612 : void Excep_TMR2_CMI2B(void);
+vect.h (MugongBianjiaoCtrl) line 618 : // TMR3_CMI3A
+vect.h (MugongBianjiaoCtrl) line 619 : #pragma interrupt (Excep_TMR3_CMI3A(vect=183))
+vect.h (MugongBianjiaoCtrl) line 620 : void Excep_TMR3_CMI3A(void);
+vect.h (MugongBianjiaoCtrl) line 622 : // TMR3_CMI3B
+vect.h (MugongBianjiaoCtrl) line 623 : #pragma interrupt (Excep_TMR3_CMI3B(vect=184))
+vect.h (MugongBianjiaoCtrl) line 624 : void Excep_TMR3_CMI3B(void);

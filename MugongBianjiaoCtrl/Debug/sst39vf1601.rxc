@@ -1,0 +1,7 @@
+-cpu=rx600
+-lang=c99
+-include="E:\FourAxisControl\FourAxisControl"
+-output=obj="E:\shuntouControl\shuntouControl\Debug\sst39vf1601.obj"
+-debug
+"E:\shuntouControl\shuntouControl\sst39vf1601.c"
+-nologo

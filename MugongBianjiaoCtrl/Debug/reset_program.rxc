@@ -1,0 +1,8 @@
+-cpu=rx600
+-lang=c99
+-include="E:\shuntouControl\shuntouControl"
+-output=obj="E:\MugongBianjiaoCtrl\MugongBianjiaoCtrl\Debug\reset_program.obj"
+-debug
+-optimize=1
+"E:\MugongBianjiaoCtrl\MugongBianjiaoCtrl\reset_program.c"
+-nologo

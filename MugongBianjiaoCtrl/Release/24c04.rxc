@@ -1,0 +1,5 @@
+-cpu=rx600
+-lang=c
+-output=obj="E:\老大\CKZ_V1.23_RT\CKZ_V1.23_RT\MugongBianjiaoCtrl\Release\24c04.obj"
+"E:\老大\CKZ_V1.23_RT\CKZ_V1.23_RT\MugongBianjiaoCtrl\24c04.c"
+-nologo

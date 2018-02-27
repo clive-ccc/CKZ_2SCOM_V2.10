@@ -1,0 +1,4 @@
+-cpu=rx600
+-output="E:\¿œ¥Û\CKZ_V1.23_RT\CKZ_V1.23_RT\MugongBianjiaoCtrl\Release\MugongBianjiaoCtrl.lib"
+-lang=c99
+-head=runtime,math,stdio,stdlib,string,new,cppstring
